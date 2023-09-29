@@ -1,0 +1,64 @@
+.account1{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 20vw;
+    gap: 1rem;
+    position: relative;
+    top: 7vh;
+}
+#xtext{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    bottom:  3vh;
+}
+#icon1{
+    text-align: left;
+    position: relative;
+    right: 15vw;
+    top: 1.3vh;
+    cursor: default;
+}
+#xlogo1{
+    position: relative;
+    top: 1.5vh;
+}
+#dont{
+    font-size: 1rem;
+    color: gray;
+    text-align: left;
+}
+#stext{
+    font-size: 1rem;
+    position: relative;
+    top: 1rem;
+    left: 0.5rem;
+    text-decoration: none;
+    
+    
+}
+#create1 {
+    background-color:black;
+    color: white;
+    height: 6vh;
+    border-radius: 2vw;
+    border: 1px solid grey;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#signinacc1 {
+    background-color:white;
+    color: #1a8cd8;
+    height: 6vh;
+    border-radius: 2vw;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#text{
+    border: 1px solid gray;
+    border-radius: 5px;
+}

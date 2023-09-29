@@ -1,0 +1,73 @@
+.signup{
+    width: 38vw;
+    height: 85vh;
+    background-color:black;
+    border-radius: 2vh ;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    width: 28vw;
+    height: 85vh;
+    text-align: left;
+    gap:1rem;
+    /* background-color: bisque */
+}
+#createtext{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.date{
+    display: flex;
+    gap:0.5rem;
+    width: 28vw;
+}
+#icon{
+    text-align: left;
+    position: relative;
+    right: 4vw;
+    top: 1.3vh;
+    cursor: default;
+}
+#date{
+    width: 10.1vw;
+}
+#date1{
+    width: 3.2vw;
+}
+#date2{
+    width: 5vw;
+}
+#outlined-basic, #date, #date1,#date2{
+    border-color: grey;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+}
+#email{
+    font-size: 1rem;
+    text-align: right;
+    color: #1a8cd8;
+    cursor: pointer;
+}
+#datetext{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+#text1{
+    font-size: 1rem;
+    color: grey;
+}
+#nextbutt{
+    position: relative;
+    top: 2vh;
+    height: 6vh;
+    background-color: #78787a;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}

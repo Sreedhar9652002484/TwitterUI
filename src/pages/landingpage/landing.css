@@ -1,0 +1,92 @@
+.maindiv {
+    width: 98vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xlogo {
+    flex-basis: 53%;
+}
+.dashboard {
+    height: 80vh;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+#happening {
+    font-size: 5rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 8vh;
+}
+#join {
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 18vh;
+}
+.account {
+    width: 55%;
+    height: 70vh;
+    position: relative;
+    bottom: 20vh;
+    display: flex;
+    gap: 0.7rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#xlogo {
+    height: 45vh;
+}
+#imglogo {
+    height: 3vh;
+}
+#google,#apple,#create,#signinacc {
+    height: 6vh;
+    border-radius: 2vw;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+#google,#apple {
+    background-color: white;
+}
+#spanor {
+    font-size: 1rem;
+}
+#create {
+    background-color: #1a8cd8;
+    color: white;
+}
+#signinacc {
+    background-color: black;
+    color: #1a8cd8;
+    border: 1px solid grey;
+}
+.or {
+    display: flex;
+}
+hr {
+    width: 9vw;
+    border-color: grey;
+    border: 1px s;
+}
+#spantext {
+    font-size: 0.8rem;
+    text-align: left;
+    color: grey;
+}
+#spanblue {
+    color: #1a8cd8;
+}
+#already {
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: relative;
+    top: 2vh;
+    text-align: left;
+}
