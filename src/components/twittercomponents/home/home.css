@@ -1,0 +1,173 @@
+.home{
+text-align: left;
+display: flex;
+flex-direction: column;
+
+}
+#home{
+    position: relative;
+    left: 1rem;
+    top: 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+.forfollowing{
+    display: flex;
+    justify-content: center;
+    /* gap: 5vw; */
+    border-bottom: 1px solid gray;
+    font-size: 1.2rem;
+    font-weight: 650;
+    position: relative;
+    top: 3vh;
+}
+.foryou{
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.forfollowing :hover{
+    background-color: #181818;
+}
+.posting{
+    display: flex;
+    position: relative;
+    top: 5vh;
+    height: 14vh;
+    border-bottom: 1px solid gray;
+    /* background-color: aqua; */
+}
+.tweetimg{
+    width: 4.5vw;
+
+    /* background-color: azure; */
+    display: flex;
+    justify-content: center;
+}
+#tweetimg{
+    width: 5vh;
+    height: 5vh;
+}
+/* .everyone{
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    background-color:navajowhite;
+}
+.textfield{
+    width: 38vw;
+    border-bottom: none;
+
+}
+.select{
+    width: 8vw;
+    height: 5vh;
+    background-color: aqua;
+    position: relative;
+    bottom: 2vh;
+}
+.formcontrol{
+    border: 1px solid grey;
+    border-radius: 2rem;
+    width: 8vw;
+    height: 3vh;
+    
+    background-color: bisque;
+}
+.earth{
+    font-size: 1rem;
+    font-weight: 650;
+    display: flex;
+    gap: 1rem;
+} */
+
+#icon11{
+    color: #1d9bf0;
+}
+.typo{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    position: relative;
+    top: 1vh;
+}
+.iconpost{
+    display: flex;
+}
+
+#postbutt{
+    width: 4.5vw;
+    height: 5vh;
+    border-radius: 2rem;
+    background-color: #1d9bf0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.hash{
+    width: 21vw;
+    /* background-color: aliceblue; */
+    justify-content: end;
+    align-items: center;
+}
+#icons3{
+    color: white;
+    position: relative;
+    left: 15vw;
+}
+#spanid1{
+    color: gray;
+    font-size: 1rem;
+}
+.profiletext{
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+    /* background-color:navajowhite; */
+    
+}
+#profiletext1{
+    position: relative;
+    bottom: 1vh;
+    font-size: 1.2rem;
+    font-weight: 650;
+}
+/* .tweet{
+    padding: 1vh;
+} */
+.profile1{
+    position: relative;
+    left: 2vw;
+    top: 5vh;
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    /* background-color: aliceblue; */
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tweetpost{
+    /* background-color: aqua; */
+    width: 80%;
+    
+}
+#para2{
+    font-size: 1.2rem;
+
+}
+#krishna{
+width: 70vh;
+}
+#ram{
+    font-size: 1rem;
+    color: #1d9bf0;
+   
+}

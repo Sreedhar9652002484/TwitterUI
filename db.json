@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "fullname": "Nagalli Sreedhar",
+      "mobilenumber": "9652002484",
+      "password": "Sri@19189",
+      "id": 1
+    },
+    {
+      "fullname": " K Yashwanth",
+      "mobilenumber": "9866952244",
+      "password": "Yash@123",
+      "id": 2
+    },
+    {
+      "fullname": "Shaik Ismail",
+      "mobilenumber": "8309716332",
+      "password": "Shaik@123",
+      "id": 3
+    },
+    {
+      "fullname": "Vamshi",
+      "mobilenumber": "8309716332",
+      "password": "Vamshi@123",
+      "id": 4
+    },
+    {
+      "fullname": "B Srikanth",
+      "mobilenumber": "7564564123",
+      "password": "Sri@1234",
+      "id": 5
+    },
+    {
+      "fullname": "B SaiNikil",
+      "mobilenumber": "7564564123",
+      "password": "Sri@1234",
+      "id": 6
+    },
+    {
+      "fullname": "Sreedhar",
+      "mobilenumber": "8555855050",
+      "password": "Sri@123456",
+      "id": 7
+    },
+    {
+      "fullname": "Nagalli",
+      "mobilenumber": "9652002484",
+      "password": "Sri@19189",
+      "dateofbirth": "",
+      "id": 8
+    }
+  ]
+}

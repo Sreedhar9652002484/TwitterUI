@@ -1,6 +1,6 @@
 .signup{
     width: 38vw;
-    height: 85vh;
+    height: 90vh;
     background-color:black;
     border-radius: 2vh ;
     display: flex;
@@ -62,8 +62,8 @@
     color: grey;
 }
 #nextbutt{
-    position: relative;
-    top: 2vh;
+    position:relative;
+    top: 3vh;
     height: 6vh;
     background-color: #78787a;
     border-radius: 2rem;
