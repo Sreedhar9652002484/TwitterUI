@@ -1,0 +1,88 @@
+.explore{
+    display: flex;
+    flex-direction: column;
+}
+.search1{
+    display: flex;
+    gap: 2.5rem;
+    position: relative;
+    top: 1vh;
+}
+.nfl{
+    position: relative;
+    top: 2vh;
+    display: flex;
+    gap: 28vw;
+    justify-content: center;
+}
+#nfl{
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+#final{
+    font-size: 1rem;
+    font-weight: 600;
+    color: gray;
+}
+.india{
+    display: flex;
+    align-items: center;
+    gap: 12.5rem;
+    justify-content: center;
+    position: relative;
+    left: 1vw;
+    top: 1vh;
+    height: 7vh;
+    width: 95%;
+    background-color: rgb(249, 102, 28);
+    border-radius:0.5rem 0.5rem 0 0;
+
+}
+.pak{
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+    justify-content: center;
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+    height: 7vh;
+    width: 95%;
+    background-color:rgb(4, 93, 4);
+    border-radius:0px 0 0.5rem 0.5rem ;
+}
+/* #hr1{
+    width: 100%;
+    position: relative;
+    bottom: 5vh;
+} */
+#indimg{
+    width: 5vh;
+}
+#ind{
+    font-size: 1.2rem;
+    font-weight: 650;
+    position: relative;
+    right: 11vw;
+}
+#score{
+    font-size: 1.2rem;
+    font-weight: 650;
+}
+#score1{
+    font-size: 1.2rem;
+    font-weight: 650;
+    color:rgba(245, 245, 245, 0.77)
+}
+.trends{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    gap: 3vh;
+}
+.sports2{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}

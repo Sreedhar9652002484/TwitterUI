@@ -17,9 +17,9 @@
     top: 1vh;
 }
 .subscribe{
-    width: 100%;
+    width: 94%;
     height: 20vh;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 1rem;
     background-color: #181818;
     position: relative;
@@ -38,6 +38,7 @@
     font-weight: 700;
     position: relative;
     bottom: 2vh;
+    cursor: pointer;
 }
 #subtext{
     font-size: 1.4rem;
@@ -52,9 +53,49 @@
     bottom: 3vh;
 }
 .whats{
-    width: 70%;
-    height: 15vh;
-    background-color: antiquewhite;
+    width: 65%;
+    height: 60vh;
+    background-color:#181818;
     position: relative;
+    border-radius: 1.5rem;
     left: 1.5vw;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;  
+}
+#whattext{
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+#sports{
+    width: 10vh;
+    border-radius: 1rem;
+    position: relative;
+    left: 8vw;
+}
+.sports{
+    display: flex;
+    /* gap: 8rem; */
+    text-align: left;
+    cursor: pointer; 
+}
+.sports:hover{
+    background-color:rgba(128, 128, 128, 0.285);
+}
+#spansport{
+    font-size: 0.9rem;
+    color: gray;
+}
+#span11{
+    font-size: 1.2rem;
+    font-weight: 650;
+}
+.moreicon{
+    position: relative;
+    left: 7vw;
+}
+#spansport1{
+    color: #1d9bf0;
 }

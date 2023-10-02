@@ -12,6 +12,12 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import profile from '../../../assests/profile.jpg'
 import shree from '../../../assests/shreekrishna.jpg'
+import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined';
+import RepeatOutlinedIcon from '@mui/icons-material/RepeatOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import AlignVerticalBottomOutlinedIcon from '@mui/icons-material/AlignVerticalBottomOutlined';
+import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+
 
 export const Home = () => {
     return (
@@ -75,6 +81,14 @@ export const Home = () => {
                 <p id='para2'>Jai Shree Krishna &#x1F64F;<span id='ram'>#JaiShreeKrishna #JaiShreeRam</span></p> 
                
                 <img  id='krishna'src={shree}></img>
+                <div className='iconspost'>  
+                   <div><IconButton style={{color:'grey'}} ><TextsmsOutlinedIcon/></IconButton><span style={{color:'gray', fontSize:'1rem'}}>567</span></div> 
+                   <div><IconButton style={{color:'grey'}} ><RepeatOutlinedIcon/></IconButton><span style={{color:'gray', fontSize:'1rem'}}>1.5k</span></div> 
+                   <div><IconButton style={{color:'grey'}} ><FavoriteBorderOutlinedIcon/></IconButton><span style={{color:'gray', fontSize:'1rem'}}>5.3k</span></div> 
+                   <div><IconButton style={{color:'grey'}} ><AlignVerticalBottomOutlinedIcon/></IconButton><span style={{color:'gray', fontSize:'1rem'}}>567</span></div> 
+                   <div><IconButton style={{color:'grey'}} ><FileUploadOutlinedIcon/></IconButton></div> 
+
+                </div>
             </div>
             </div>
             </div>

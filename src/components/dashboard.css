@@ -32,30 +32,38 @@
     top:1vh;
     left: 8rem;
     width: 60%;
-    /* background-color: aqua; */
     height: 80%  
 }
+
 #logo1{
     width: 7vh;
     position: relative;
     right: 1vh;
+    
 }
 #span1{
     color: white;
 }
-.post1{
-    /* width: ; */
-}
+
 #icons1{
     height: 5vh;
+    /* background-color: #1a8dc8; */
+    text-align: left;
     border-radius: 1vw;
     font-size: 1.3rem;
     color: white;
+    text-align: left;
 }
+#icons1:hover{
+    background-color:rgba(128, 128, 128, 0.445);
+
+}
+
 #span{
     position: relative;
     left: 1vw;
     color: white;
+
 }
 
 #post1{
@@ -80,7 +88,7 @@
 }
 .profile{
     position: relative;
-    top: 5vh;
+    top: 8vh;
     height: 10vh;
     width: 17vw;
  border-radius: 5rem;
@@ -108,7 +116,7 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    bottom: 0;
+    top:70vh;
     background-color: black;
     box-shadow: 2px 1px 10px rgba(255, 255, 255, 0.3); /* Use white shadow with desired opacity */
     width: 18vw;
