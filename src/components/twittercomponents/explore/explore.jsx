@@ -9,7 +9,9 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 export const Explore=()=>{
     return(
+
         <div className='explore'>
+           <div style={{position:'fixed',width:'42%'}}>
             <div className="search1">
           <Search style={{width:'40ch'}}>
             <SearchIconWrapper>
@@ -24,11 +26,14 @@ export const Explore=()=>{
         </div>
         <div className="forfollowing">
                 <div className="foryou"><p>For you</p></div>
-                <div className="foryou"><p>Trending</p></div>
-                <div className="foryou"><p>News</p></div>
-                <div className="foryou"><p>Sports</p></div>
-                <div className="foryou"><p>Entertain</p></div>
+                <div className="foryou"><p style={{color:'gray'}}>Trending</p></div>
+                <div className="foryou"><p style={{color:'gray'}}>News</p></div>
+                <div className="foryou"><p style={{color:'gray'}}>Sports</p></div>
+                <div className="foryou"><p style={{color:'gray'}}>Entertain</p></div>
             </div>
+            </div>
+            <div style={{position:'relative',top:'15vh'}}>
+
             <div className="sports1">
                 <div className="nfl">
                 <p id='nfl'>NFL</p>
@@ -82,7 +87,32 @@ export const Explore=()=>{
           <IconButton className='iconbutton' id='icons4'>
             <MoreHorizIcon style={{ fontSize: '28', color: 'grey' }} /></IconButton>          
             </div>
+            <div className='sports2'>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span id='spansport'>Trending</span>
+            <span id='span11' >#Salar</span>
+            <span id='spansport'>40.5k posts<span id='spansport1'> #prabhas #neel</span></span></div>
+          <IconButton className='iconbutton' id='icons4'>
+            <MoreHorizIcon style={{ fontSize: '28', color: 'grey' }} /></IconButton>          
+            </div>
+            <div className='sports2'>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span id='spansport'>Entertainment</span>
+            <span id='span11' >#YRFSPYUniverse</span>
+            <span id='spansport'>101.1k <span id='spansport1'>#Jrntr #hrithik</span></span></div>
+          <IconButton className='iconbutton' id='icons4'>
+            <MoreHorizIcon style={{ fontSize: '28', color: 'grey' }} /></IconButton>          
+            </div>
+            <div className='sports2'>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span id='spansport'>Trending</span>
+            <span id='span11' >#Celebration</span>
+            <span id='spansport'>89.7k posts</span></div>
+          <IconButton className='iconbutton' id='icons4'>
+            <MoreHorizIcon style={{ fontSize: '28', color: 'grey' }} /></IconButton>          
+            </div>
             </div>
         </div>
+      </div>
     )
 }

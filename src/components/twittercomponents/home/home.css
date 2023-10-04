@@ -8,7 +8,6 @@ flex-direction: column;
     position: relative;
     left: 1rem;
     top: 1rem;
-
     font-size: 1.5rem;
     font-weight: 650;
 }
@@ -16,8 +15,8 @@ flex-direction: column;
     display: flex;
     justify-content: center;
     /* gap: 5vw; */
-    border-bottom: 1px solid gray;
-    font-size: 1.2rem;
+    border-bottom: 1px solid #8080804d;
+    font-size: 1.1rem;
     font-weight: 650;
     position: relative;
     top: 3vh;
@@ -35,7 +34,7 @@ flex-direction: column;
     position: relative;
     top: 5vh;
     height: 14vh;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #8080804d;
     /* background-color: aqua; */
 }
 .tweetimg{
@@ -49,21 +48,24 @@ flex-direction: column;
     width: 5vh;
     height: 5vh;
 }
-/* .everyone{
+.everyone{
     display: flex;
     gap: 2vh;
     flex-direction: column;
-    background-color:navajowhite;
+    /* background-color:navajowhite; */
+}
+.tweetimg2{
+    display: flex;
+    flex-direction: row;
 }
 .textfield{
     width: 38vw;
     border-bottom: none;
-
 }
 .select{
     width: 8vw;
     height: 5vh;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: relative;
     bottom: 2vh;
 }
@@ -73,14 +75,15 @@ flex-direction: column;
     width: 8vw;
     height: 3vh;
     
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 .earth{
     font-size: 1rem;
     font-weight: 650;
     display: flex;
     gap: 1rem;
-} */
+    color: #1d9bf0;
+}
 
 #icon11{
     color: #1d9bf0;
@@ -166,7 +169,7 @@ flex-direction: column;
 }
 #krishna{
 width: 73vh;
-height: 48vh;
+height: 55vh;
 border-radius: 1.5rem;
 }
 #ram{

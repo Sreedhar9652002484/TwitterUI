@@ -16,6 +16,8 @@ import { useNavigate } from 'react-router-dom';
 import { Home } from './twittercomponents/home/home';
 import { Trending } from './twittercomponents/trending/trending';
 import { Explore } from './twittercomponents/explore/explore';
+import { Notifications } from './twittercomponents/notifications/notification';
+import { Messages } from './twittercomponents/messages/message';
 
 
 const initialState={
@@ -44,6 +46,7 @@ export const TwitterDashboard=()=>{
             navigate('/')
         }
     }
+
     const [state, dispatch]=useReducer(reducer, initialState)
 
     const renderTab=()=>{
@@ -51,9 +54,16 @@ export const TwitterDashboard=()=>{
             case 'Home':
                 return <Home/>
             case 'Explore':
-                return <Explore/>    
+                return <Explore/> 
+            case 'Notifications':
+                return <Notifications/>
+            case 'Messages':
+                return <Messages/>
         }
     }
+
+    console.log(initialState.selectedTab);
+    console.log(state);
 
 
     return(       
@@ -61,15 +71,15 @@ export const TwitterDashboard=()=>{
             <div className="left">
                 <div className="icons">
                 <img id="logo"src={logo}alt='logo' ></img>
-                <IconButton className='iconbutton1' id='icons1' onClick={()=>dispatch({type:'TAB', payload:'Home'})} ><HomeIcon  style={{fontSize:'38'}}/><span id='span'>Home</span></IconButton>
-                <IconButton className='iconbutton1' id='icons1' onClick={()=>dispatch({type:'TAB',payload:'Explore'})}  ><SearchIcon style={{fontSize:'35'}}/><span id='span'>Explore</span></IconButton>
-                <IconButton  className='iconbutton'id='icons1'><NotificationsNoneIcon style={{fontSize:'35'}}/><span id='span'>Notifications</span></IconButton>
-                <IconButton className='iconbutton' id='icons1'><MailOutlineIcon style={{fontSize:'32'}}/><span id='span'>Messages</span></IconButton>
-                <IconButton  className='iconbutton'id='icons1'><FeaturedPlayListIcon style={{fontSize:'32'}}/><span id='span'>Lists</span></IconButton>
-                <IconButton className='iconbutton'id='icons1'><PeopleIcon style={{fontSize:'32'}}/><span id='span'>Communities</span></IconButton>
-                <IconButton className='iconbutton' id='icons1'><img id="logo1" src={logo}alt='logo' ></img><span id='span1'>Premium</span></IconButton>
-               <IconButton className='iconbutton' id='icons1'><PermIdentityOutlinedIcon style={{fontSize:'32'}}/><span id='span'>Profile</span></IconButton> 
-                <IconButton className='iconbutton' id='icons1'><PendingOutlinedIcon style={{fontSize:'32'}}/><span id='span'>More</span></IconButton>
+            <div className="iconbu"><IconButton className='iconbutton1' id='icons1' onClick={()=>dispatch({type:'TAB', payload:'Home'})} ><HomeIcon  style={{fontSize:'38'}}/><span id='span'>Home</span></IconButton></div>
+            <div className="iconbu"><IconButton className='iconbutton1' id='icons1' onClick={()=>dispatch({type:'TAB',payload:'Explore'})}  ><SearchIcon style={{fontSize:'35'}}/><span id='span'>Explore</span></IconButton></div>
+            <div className="iconbu"><IconButton  className='iconbutton'id='icons1' onClick={()=>dispatch({type:'TAB',payload:'Notifications'})} ><NotificationsNoneIcon style={{fontSize:'35'}}/><span id='span'>Notifications</span></IconButton></div>
+            <div className="iconbu"><IconButton className='iconbutton' id='icons1'  onClick={()=>dispatch({type:'TAB',payload:'Messages'})}><MailOutlineIcon style={{fontSize:'32'}}/><span id='span'>Messages</span></IconButton></div>
+            <div className="iconbu"><IconButton  className='iconbutton'id='icons1'><FeaturedPlayListIcon style={{fontSize:'32'}}/><span id='span'>Lists</span></IconButton></div>
+            <div className="iconbu"><IconButton className='iconbutton'id='icons1'><PeopleIcon style={{fontSize:'32'}}/><span id='span'>Communities</span></IconButton></div>
+            <div className="iconbu"><IconButton className='iconbutton' id='icons1'><img id="logo1" src={logo}alt='logo' ></img><span id='span1'>Premium</span></IconButton></div>
+            <div className="iconbu"><IconButton className='iconbutton' id='icons1'><PermIdentityOutlinedIcon style={{fontSize:'32'}}/><span id='span'>Profile</span></IconButton> </div>
+            <div className="iconbu"><IconButton className='iconbutton' id='icons1'><PendingOutlinedIcon style={{fontSize:'32'}}/><span id='span'>More</span></IconButton></div>
                <div className='post1'><button id='post1'>Post</button></div> 
                 {logut&&
                      <div className='profile-menu'>
@@ -83,17 +93,23 @@ export const TwitterDashboard=()=>{
                     <span id='spanid'>@SRI19189</span>
                     </div>
                     <IconButton className='iconbutton' id='icons2'>
-                        
                         <MoreHorizIcon style={{fontSize:'28'}}/></IconButton>
                     </div>
                 </div> 
             </div>
-            <div className="center">
-            {/* <Home/> */}
+            <div className="center" {...state.selectedTab==='Messages'&& {style:{flexBasis:'30%'}}}  >
             {renderTab()}
             </div>
             <div className="right">
-                <Trending/>
+                {state.selectedTab==='Messages'?
+                <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',width:'70%',height:'100vh'}}>
+                <div style={{textAlign:'left'}}>
+                <p style={{fontSize:'2rem',fontWeight:'650'}}>Select a message</p>
+                <p style={{fontSize:'1.2rem',color:'gray',position:'relative',bottom:'2vh'}}>Choose from your existing conversations, start a new one, or just keep swimming.</p>
+                <button style={{width:'25vh',height:'7vh',borderRadius:'2rem', backgroundColor:'#1a8dc8',color:'white',cursor:'pointer',fontSize:'1.2rem'}}>New message</button>
+                </div>
+                </div>:
+                <Trending/>}
             </div>
          </div>
     )
